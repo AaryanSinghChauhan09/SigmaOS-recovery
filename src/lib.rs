@@ -1,6 +1,39 @@
-//! SigmaOS Recovery
-//! System recovery and rescue
+//! SigmaOS-recovery - SigmaOS Component
+//!
+//! Development and system tools for SigmaOS.
 
-pub mod recovery;
+use anyhow::Result;
+use log::info;
+use serde::{Deserialize, Serialize};
 
-pub use recovery::Recovery;
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Config {
+    pub enabled: bool,
+    pub auto_start: bool,
+}
+
+impl Default for Config {
+    fn default() -> Self {
+        Self { enabled: true, auto_start: true }
+    }
+}
+
+pub struct recovery {
+    config: Config,
+}
+
+impl recovery {
+    pub fn new(config: Config) -> Self {
+        Self { config }
+    }
+
+    pub fn initialize(&mut self) -> Result<()> {
+        info!("Initializing SigmaOS-recovery");
+        Ok(())
+    }
+
+    pub fn run(&mut self) -> Result<()> {
+        info!("Running SigmaOS-recovery");
+        Ok(())
+    }
+}
