@@ -1,9 +1,9 @@
 # SigmaOS-recovery
 
-No GitHub description is set; component scope remains unclassified.
+Recovery Tool for SigmaOS inspired by SigmaOS Linux
 
-- **Category:** Documentation
-- **Engine:** meta_concept
+- **Category:** Utilities
+- **Engine:** recovery
 - **Language:** Rust
 
 ## Build & Test
