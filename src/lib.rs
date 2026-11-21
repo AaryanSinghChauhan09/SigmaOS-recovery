@@ -2,6 +2,9 @@
 #![forbid(unsafe_code)]
 #![warn(missing_docs)]
 
+/// Recovery tool v2: boot repair, GRUB management, system restore.
+pub mod sigmarecovery2;
+
 /// System recovery daemon module.
 pub mod sigmarecovery;
 
