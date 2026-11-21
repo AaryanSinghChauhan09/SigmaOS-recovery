@@ -2,6 +2,9 @@
 #![forbid(unsafe_code)]
 #![warn(missing_docs)]
 
+/// System recovery daemon module.
+pub mod sigmarecovery;
+
 use thiserror::Error;
 
 /// Error types for this component.
